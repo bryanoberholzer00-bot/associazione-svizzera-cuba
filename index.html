@@ -4,231 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Associazione Svizzera-Cuba | Solidarietà con Cuba</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #fff;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .header {
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
-            border-radius: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.3);
-        }
-        
-        .flag {
-            font-size: 4em;
-            margin-bottom: 15px;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .tagline {
-            font-size: 1.2em;
-            opacity: 0.9;
-            margin-top: 10px;
-        }
-        
-        .founded {
-            background: rgba(255,255,255,0.1);
-            display: inline-block;
-            padding: 8px 20px;
-            border-radius: 20px;
-            margin-top: 15px;
-            font-size: 0.9em;
-        }
-        
-        .section {
-            background: rgba(255,255,255,0.05);
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 25px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        
-        .section h2 {
-            color: #ff6b6b;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            border-left: 4px solid #c41e3a;
-            padding-left: 15px;
-        }
-        
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        
-        li:before {
-            content: '✔️ ';
-            margin-right: 10px;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .card {
-            background: linear-gradient(135deg, rgba(196,30,58,0.2), rgba(139,0,0,0.2));
-            padding: 25px;
-            border-radius: 15px;
-            border: 2px solid rgba(196,30,58,0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(196,30,58,0.4);
-        }
-        
-        .card h3 {
-            color: #ff6b6b;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #c41e3a, #8b0000);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            margin: 10px 5px;
-            font-weight: bold;
-            transition: all 0.3s;
-            border: 2px solid transparent;
-        }
-        
-        .btn:hover {
-            transform: scale(1.05);
-            border-color: #ff6b6b;
-            box-shadow: 0 10px 25px rgba(196,30,58,0.5);
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-            border-top: 2px solid rgba(255,255,255,0.1);
-            opacity: 0.8;
-        }
-        
-        @media (max-width: 768px) {
-            h1 { font-size: 1.8em; }
-            .section { padding: 20px; }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chi-siamo.html">Chi Siamo</a></li>
+            <li><a href="blocco.html">Il Blocco USA</a></li>
+            <li><a href="attivita.html">Attività</a></li>
+            <li><a href="progetti.html">Progetti</a></li>
+            <li><a href="notizie.html">Notizie</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>🇨🇺 Associazione Svizzera-Cuba 🇨🇭</h1>
+        <p class="tagline">Solidarietà con il popolo cubano dal 1973</p>
+    </header>
+
     <div class="container">
-        <div class="header">
-            <div class="flag">🇨🇭La bandiera cubana con una stella🇨🇭</div>
-            <h1>Associazione Svizzera-Cuba</h1>
-            <p class="tagline">Solidarietà con il popolo cubano e la rivoluzione</p>
-            <div class="founded">⭐ Fondata nel 1973 - 50+ anni di solidarietà</div>
-        </div>
-
-        <div class="section">
-            <h2>🤝 Chi Siamo</h2>
-            <p>L'<strong>Associazione Svizzera-Cuba (ASC)</strong> nasce agli inizi degli anni '60, per solidarietà con la Rivoluzione Cubana, subito dopo il trionfo rivoluzionario del 1° gennaio 1959. Fondata ufficialmente nel <strong>1973</strong>, l'ASC si profila nel momento dell'aggressione degli Stati Uniti a Playa Girón (17 aprile 1961).</p>
-            <br>
-            <p>L'ASC si ispira agli stessi <strong>ideali della Rivoluzione Cubana</strong>:</p>
-            <ul>
-                <li>Principi di solidarietà, uguaglianza e fraterna collaborazione tra i popoli</li>
-                <li>Lotta contro ogni forma di razzismo e oppressione</li>
-                <li>Salvaguardia dei diritti umani collettivi e individuali</li>
-                <li>Consolidamento della pace nel mondo</li>
-            </ul>
-            <br>
-            <p>L'ASC è <strong>autonoma</strong> dal governo e dai partiti politici e si colloca nel vasto movimento progressista e antimperialista della Svizzera.</p>
-        </div>
-
-        <div class="section">
-            <h2>🚫 La Lotta Contro il Blocco</h2>
-            <p>L'obiettivo prioritario dell'ASC è la <strong>lotta contro l'illegale blocco economico, commerciale, finanziario e culturale</strong> che gli Stati Uniti impongono a Cuba da oltre 60 anni.</p>
-            <br>
-            <p>Dal 1992, l'Assemblea Generale delle Nazioni Unite vota annualmente una risoluzione che esige l'abolizione del blocco. Nonostante la schiacciante maggioranza degli Stati membri a favore, tale risoluzione non è mai stata rispettata. Al contrario, gli Stati Uniti hanno reso ancora più feroce l'applicazione del blocco, con il crudele obiettivo di strangolare l'economia cubana.</p>
-        </div>
-
-        <div class="section">
-            <h2>🎓 Le Nostre Attività</h2>
-            <p>La solidarietà dell'ASC si esprime attraverso diverse azioni concrete:</p>
+        <section>
+            <h2>Benvenuti</h2>
+            <p>L'Associazione Svizzera-Cuba è un'organizzazione di solidarietà che si batte per la difesa della Rivoluzione cubana e contro il blocco economico imposto dagli Stati Uniti. Dal 1973, lavoriamo per promuovere la conoscenza della realtà cubana e sostenere il diritto del popolo cubano all'autodeterminazione.</p>
             
-            <div class="grid">
+            <p>Il nostro lavoro si concentra su tre assi principali:</p>
+            <div class="cards">
                 <div class="card">
-                    <h3>📚 Informazione</h3>
-                    <p>Conferenze, dibattiti, incontri, proiezioni, pubblicazioni ed esposizioni per fornire un'informazione obiettiva su Cuba.</p>
+                    <h3>✊ Solidarietà Attiva</h3>
+                    <p>Promuoviamo campagne di sostegno concreto al popolo cubano attraverso raccolte fondi, invio di materiali e progetti di cooperazione.</p>
+                    <a href="progetti.html" class="btn">Scopri i Progetti</a>
                 </div>
                 
                 <div class="card">
-                    <h3>✍️ Brigate di Lavoro</h3>
-                    <p>Organizzazione di brigate di lavoro volontario e viaggi politico-culturali di gruppo a Cuba.</p>
+                    <h3>📢 Lotta al Blocco</h3>
+                    <p>Denunciamo il blocco economico, commerciale e finanziario imposto dagli USA, che viola i diritti umani del popolo cubano.</p>
+                    <a href="blocco.html" class="btn">Il Blocco USA</a>
                 </div>
                 
                 <div class="card">
-                    <h3>🏛️ Progetti Solidali</h3>
-                    <p>Promozione di progetti mirati e raccolte fondi per ospedali, scuole, case per anziani e centri culturali cubani.</p>
-                </div>
-                
-                <div class="card">
-                    <h3>🌍 Cooperazione</h3>
-                    <p>Supporto alla cooperazione allo sviluppo e aiuto umanitario in caso di catastrofi naturali.</p>
+                    <h3>🎓 Informazione</h3>
+                    <p>Organizziamo conferenze, dibattiti e iniziative culturali per far conoscere la vera realtà di Cuba.</p>
+                    <a href="attivita.html" class="btn">Le Nostre Attività</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section">
-            <h2>📍 Dove Siamo</h2>
-            <p><strong>Sede:</strong> Via Cantonale 54, Magliaso, Ticino</p>
-            <p><strong>Sito web:</strong> <a href="https://www.cuba-si.ch" target="_blank" style="color: #ff6b6b;">www.cuba-si.ch</a></p>
-            <p><strong>Email:</strong> national@cuba-si.ch</p>
-            <br>
-            <p>L'ASC è presente in tutta la Svizzera con sezioni regionali attive in Ticino e altre regioni.</p>
-        </div>
-
-        <div class="section">
-            <h2>❤️ Come Sostenere</h2>
-            <p>Unisciti alla nostra missione di solidarietà con Cuba!</p>
-            <br>
-            <div style="text-align: center;">
-                <a href="https://www.cuba-si.ch" class="btn" target="_blank">👥 Diventa Socio</a>
-                <a href="https://www.cuba-si.ch" class="btn" target="_blank">💰 Dona Ora</a>
-                <a href="https://www.cuba-si.ch" class="btn" target="_blank">📧 Contattaci</a>
+        <section>
+            <h2>Ultime Notizie</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Assemblea Generale 2024</h3>
+                    <p>La prossima assemblea generale dell'associazione si terrà a Magliaso. Tutti i membri sono invitati a partecipare.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Campagna Contro il Blocco</h3>
+                    <p>Continua la nostra campagna internazionale per la fine del blocco USA contro Cuba. Unisciti alla lotta!</p>
+                </div>
             </div>
-        </div>
+            <a href="notizie.html" class="btn">Tutte le Notizie</a>
+        </section>
 
-        <div class="footer">
-            <p>🇨🇺 Associazione Svizzera-Cuba (ASC) - Dal 1973 🇨🇭</p>
-            <p>Solidarietà con il popolo cubano e la rivoluzione</p>
-            <p style="margin-top: 15px; font-size: 0.9em;">¡Hasta la Victoria Siempre!</p>
-        </div>
+        <section>
+            <h2>Come Sostenerci</h2>
+            <p>Il tuo sostegno è fondamentale per continuare la nostra missione. Puoi aiutarci in diversi modi:</p>
+            <ul>
+                <li><strong>Diventa socio:</strong> Unisciti alla nostra associazione e partecipa attivamente alle nostre iniziative</li>
+                <li><strong>Fai una donazione:</strong> Sostieni i nostri progetti di solidarietà con Cuba</li>
+                <li><strong>Diffondi:</strong> Condividi le nostre campagne e iniziative sui social media</li>
+                <li><strong>Partecipa:</strong> Vieni ai nostri eventi e manifestazioni</li>
+            </ul>
+            <a href="contatti.html" class="btn">Contattaci</a>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Associazione Svizzera-Cuba</p>
+        <p>Solidarietà con il popolo cubano | ¡Hasta la Victoria Siempre!</p>
+        <p>Sede: Magliaso, Ticino, Svizzera</p>
+    </footer>
 </body>
 </html>
